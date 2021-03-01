@@ -82,13 +82,15 @@ public class Cardio2eTransaction implements Cloneable, Serializable {
     public Cardio2eTransaction() {
     }
 
-    public Cardio2eTransaction clone() {
-        try {
-            return (Cardio2eTransaction) super.clone();
-        } catch (CloneNotSupportedException e) {
-            return null;
-        }
-    }
+    /*
+     * public Cardio2eTransaction clone() {
+     * try {
+     * return (Cardio2eTransaction) super.clone();
+     * } catch (CloneNotSupportedException e) {
+     * return null;
+     * }
+     * }
+     */
 
     public Cardio2eTransaction deepClone() {
         try {
@@ -104,14 +106,6 @@ public class Cardio2eTransaction implements Cloneable, Serializable {
         } catch (ClassNotFoundException e) {
             return null;
         }
-    }
-
-    public String toString() { // Method toString will be used to encode object
-                               // data to Cardio2e stream string type
-                               // transaction. In this super class, no complete
-                               // data will be available, so toString will
-                               // returns null.
-        return null;
     }
 
     public Cardio2eTransactionTypes getTransactionType() {

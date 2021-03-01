@@ -312,8 +312,9 @@ public class Cardio2eHvacControlTransaction extends Cardio2eTransaction {
         return verified;
     }
 
+    @Override
     public String toString() {
-        String returnString = null;
+        String returnString = "";
         if (isDataVerified()) {
             switch (getTransactionType()) {
                 case ACK:

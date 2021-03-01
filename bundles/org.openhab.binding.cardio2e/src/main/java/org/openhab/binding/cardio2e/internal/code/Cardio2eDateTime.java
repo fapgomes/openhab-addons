@@ -66,13 +66,15 @@ public class Cardio2eDateTime implements Cloneable, Serializable {
         fromIntValues(year, month, day, hour, minute);
     }
 
-    public Cardio2eDateTime clone() {
-        try {
-            return (Cardio2eDateTime) super.clone();
-        } catch (CloneNotSupportedException e) {
-            return null;
-        }
-    }
+    /*
+     * public Cardio2eDateTime clone() {
+     * try {
+     * return (Cardio2eDateTime) super.clone();
+     * } catch (CloneNotSupportedException e) {
+     * return null;
+     * }
+     * }
+     */
 
     public Cardio2eDateTime deepClone() {
         try {
@@ -90,6 +92,7 @@ public class Cardio2eDateTime implements Cloneable, Serializable {
         }
     }
 
+    @Override
     public String toString() {
         return dateTime;
     }

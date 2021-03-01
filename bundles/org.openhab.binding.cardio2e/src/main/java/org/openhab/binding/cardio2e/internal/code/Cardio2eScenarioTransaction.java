@@ -105,8 +105,9 @@ public class Cardio2eScenarioTransaction extends Cardio2eTransaction {
     }
 
     @SuppressWarnings("incomplete-switch")
+    @Override
     public String toString() {
-        String returnString = null;
+        String returnString = "";
         if (isDataVerified()) {
             switch (getTransactionType()) {
                 case ACK:

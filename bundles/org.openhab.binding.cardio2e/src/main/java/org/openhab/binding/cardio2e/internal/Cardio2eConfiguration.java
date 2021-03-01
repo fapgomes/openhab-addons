@@ -12,12 +12,15 @@
  */
 package org.openhab.binding.cardio2e.internal;
 
+import org.eclipse.jdt.annotation.NonNullByDefault;
+
 /**
  * The {@link cardio2eConfiguration} class contains fields mapping thing configuration parameters.
  *
  * @author Manuel Alberto Guerrero Díaz - Initial contribution
  * @author Fernando A. P. Gomes - OH2 and OH3 port
  */
+@NonNullByDefault
 public class Cardio2eConfiguration {
 
     public String serialPort = "/dev/ttyUSB0"; // serial port where the device is connected
